@@ -82,7 +82,8 @@ export default function AddStudentPage() {
       const { data, error } = await createStudent(formData)
       
       if (error) {
-        throw new Error(error.message || 'Gagal menambahkan mahasiswa')
+        const msg = typeof error === 'string' ? error : (error as any)?.message || JSON.stringify(error)
+        throw new Error(msg || 'Gagal menambahkan mahasiswa')
       }
 
       // Redirect ke halaman students setelah berhasil

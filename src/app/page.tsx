@@ -259,7 +259,7 @@ export default function Home() {
                   {/* Cycle counter */}
                   <div className="mt-3 space-y-2">
                     <p className="text-gray-400 text-xs">
-                      Kata: {loadingTextIndex + 1}/{loadingTexts.length} - "{loadingTexts[loadingTextIndex] || 'Loading...'}"
+                      Kata: {loadingTextIndex + 1}/{loadingTexts.length} - &quot;{loadingTexts[loadingTextIndex] || 'Loading...'}&quot;
                     </p>
                     <div className="text-gray-500 text-xs">
                       ⏱️ Animasi: {animationStarted ? 'Berjalan' : 'Menunggu'} | 

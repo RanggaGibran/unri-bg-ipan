@@ -159,7 +159,10 @@ export default function DosenDetailPage() {
       const { data: activeStudents, error: fetchError } = await getActiveStudents()
       
       if (fetchError) {
-        setError('Gagal mengambil data mahasiswa: ' + fetchError.message)
+        const msg = typeof fetchError === 'string'
+          ? fetchError
+          : (fetchError as any)?.message || JSON.stringify(fetchError)
+        setError('Gagal mengambil data mahasiswa: ' + msg)
         return
       }
 
