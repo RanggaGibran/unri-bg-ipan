@@ -1,0 +1,98 @@
+// Mock data untuk development tanpa Supabase
+import { Student, Statistics } from '../types/database'
+
+export const mockStudents: Student[] = [
+  {
+    id: 1,
+    nim: '2021001001',
+    name: 'Ahmad Pratama',
+    program_studi: 'Teknologi Hasil Pertanian',
+    thesis_title: 'Sistem Monitoring IoT Berbasis Web',
+    research_permit: '2024-02-15', // Tanggal izin penelitian
+    created_at: '2024-01-15T00:00:00Z',
+    updated_at: '2024-12-01T00:00:00Z',
+    is_completed: false,
+    uj3_date: '2024-03-15',
+    supervisor_1: 'Dr. Budi Santoso',
+    supervisor_2: 'Prof. Sari Wijaya',
+    sup_date: '2024-06-20',
+    sup_supervisor_1: 'Dr. Budi Santoso',
+    sup_supervisor_2: 'Prof. Sari Wijaya',
+    sup_examiner_1: 'Dr. Andi Rahman',
+    sup_examiner_2: 'Dr. Lisa Permata',
+    shp_date: '2024-11-10',
+    shp_supervisor_1: 'Dr. Budi Santoso',
+    shp_supervisor_2: 'Prof. Sari Wijaya',
+    shp_examiner_1: 'Dr. Andi Rahman',
+    shp_examiner_2: 'Dr. Lisa Permata',
+    uk_date: null,
+    uk_examiner_1: null,
+    uk_examiner_2: null,
+    uk_examiner_3: null,
+    uk_examiner_4: null
+  },
+  {
+    id: 2,
+    nim: '2021001002', 
+    name: 'Siti Nurhaliza',
+    program_studi: 'Teknologi Industri Pertanian',
+    thesis_title: 'Machine Learning untuk Prediksi Cuaca',
+    research_permit: '2024-02-20', // Tanggal izin penelitian
+    created_at: '2024-01-20T00:00:00Z',
+    updated_at: '2024-10-15T00:00:00Z',
+    is_completed: false,
+    uj3_date: '2024-03-20',
+    supervisor_1: 'Prof. Eko Prasetyo',
+    supervisor_2: 'Dr. Maya Indira',
+    sup_date: '2024-07-10',
+    sup_supervisor_1: 'Prof. Eko Prasetyo',
+    sup_supervisor_2: 'Dr. Maya Indira',
+    sup_examiner_1: 'Dr. Rudi Hartono',
+    sup_examiner_2: 'Dr. Nina Sari',
+    shp_date: null,
+    shp_supervisor_1: null,
+    shp_supervisor_2: null,
+    shp_examiner_1: null,
+    shp_examiner_2: null,
+    uk_date: null,
+    uk_examiner_1: null,
+    uk_examiner_2: null,
+    uk_examiner_3: null,
+    uk_examiner_4: null
+  },
+  {
+    id: 3,
+    nim: '2021001003',
+    name: 'Rizki Ananda',
+    program_studi: 'Teknologi Hasil Pertanian',
+    thesis_title: 'Aplikasi Mobile E-Commerce',
+    research_permit: 'Telah disetujui',
+    created_at: '2024-01-10T00:00:00Z',
+    updated_at: '2024-12-20T00:00:00Z',
+    is_completed: true,
+    uj3_date: '2024-03-05',
+    supervisor_1: 'Dr. Dian Kurnia',
+    supervisor_2: 'Prof. Agus Setiawan',
+    sup_date: '2024-05-15',
+    sup_supervisor_1: 'Dr. Dian Kurnia',
+    sup_supervisor_2: 'Prof. Agus Setiawan',
+    sup_examiner_1: 'Dr. Vera Amalia',
+    sup_examiner_2: 'Dr. Tomi Wijaksono',
+    shp_date: '2024-09-20',
+    shp_supervisor_1: 'Dr. Dian Kurnia',
+    shp_supervisor_2: 'Prof. Agus Setiawan',
+    shp_examiner_1: 'Dr. Vera Amalia',
+    shp_examiner_2: 'Dr. Tomi Wijaksono',
+    uk_date: '2024-12-15',
+    uk_examiner_1: 'Prof. Indra Kusuma',
+    uk_examiner_2: 'Dr. Sinta Dewi',
+    uk_examiner_3: 'Dr. Rahmat Hidayat',
+    uk_examiner_4: 'Dr. Putri Maharani'
+  }
+]
+
+export const mockStatistics: Statistics = {
+  total: 3,
+  completed: 1,
+  active: 2
+}
